@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">авто</string>
+    <string name="name_of_item_menu_toolbar">Поиск</string>
+    <string name="action_exit">Выход</string>
+    <string name="settings">Настройки</string>
+    <string name="add_auto">Добавить авто</string>
+    <string name="edit">Редактировать</string>
+    <string name="name">Название</string>
+    <string name="modification">Модификация</string>
+    <string name="power">Мощность</string>
+    <string name="weight">Вес</string>
+    <string name="empty_list">Список пуст</string>
+    <string name="change">Изменить</string>
+    <string name="change_characters">Изменить характеристики</string>
+</resources>

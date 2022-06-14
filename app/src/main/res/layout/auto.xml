@@ -1,0 +1,79 @@
+<com.daimajia.swipe.SwipeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_edit_foreground"
+            android:contentDescription="@string/edit" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/autoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+        <com.example.auto_list.ui.PhotoImageView
+            android:id="@+id/photo"
+            android:layout_width="70dp"
+            android:layout_height="120dp" />
+        <LinearLayout
+            android:id="@+id/layoutText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="10dp"
+            tools:ignore="RtlSymmetry">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:ignore="NestedWeights,RtlCompat" />
+            <TextView
+                android:id="@+id/modification"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorTextOfCharacter"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:ignore="NestedWeights,RtlCompat" />
+            <TextView
+                android:id="@+id/power"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorTextOfCharacter"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:ignore="NestedWeights,RtlCompat" />
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorTextOfCharacter"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:ignore="NestedWeights,RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>
